@@ -10,6 +10,7 @@
   font-family: "FreightMediumItalic";
   src: url("fonts/Freight-Big-Pro-Medium-Italic.otf") format("opentype");
 }
+
 @font-face {
   font-family: "FreightMedium";
   src: url("fonts/Freight-Big-Pro-Medium.otf") format("opentype");
@@ -72,8 +73,10 @@ body {
 hr {
   height: 1px;
   background-color: var(--yellowcolor);
-  width: 90%;
+  width: 85%;
   margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 5%;
 }
 
 .center {
@@ -121,16 +124,27 @@ hr {
   border: none;
 }
 
-.centertitle {
-  text-align: center;
-  position: relative;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-family: var(--font-poppins);
-  max-width: 650px;
-  margin: 5px auto;
-  font-size: 20px;
-  color: var(--blackcolor);
+@media (max-width: 834px) {
+  .centertitle {
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-family: var(--font-poppins);
+    max-width: 650px;
+    margin: 5px auto;
+    font-size: 20px;
+    color: var(--blackcolor);
+  }
+}
+
+@media (min-width: 834px) {
+  .centertitle {
+    display: none;
+  }
+  .socials {
+    display: none;
+  }
 }
 
 .headercolumn {
@@ -147,6 +161,17 @@ hr {
     background-color: black;
     margin: 6px 0;
   }
+
+  .bio-paragraph {
+    font-family: var(--font-poppins-light);
+    padding: 20px 0;
+    width: 90%;
+    max-width: 500px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.25rem;
+    color: #dc004d;
+  }
 }
 @media (min-width: 834px) {
   .hamburger {
@@ -158,7 +183,6 @@ hr {
     font-family: var(--font-poppins-light);
     padding: 20px 0;
     width: 90%;
-    max-width: 500px;
     text-align: justify;
     line-height: 1.6;
     font-size: 1.25rem;
@@ -167,16 +191,6 @@ hr {
   }
 }
 
-.bio-paragraph {
-  font-family: var(--font-poppins-light);
-  padding: 20px 0;
-  width: 90%;
-  max-width: 500px;
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 1.25rem;
-  color: #dc004d;
-}
 .headshot {
   z-index: 100;
   margin: 0 5%;
@@ -290,6 +304,10 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     align-items: initial;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin-left: 15%;
   }
 }
 .image-text {
@@ -400,6 +418,9 @@ figure {
     position: sticky;
     top: 1rem;
     z-index: 1;
+    margin-left: 20px;
+    margin-top: -30px;
+    font-family: var(--font-inter);
   }
 
   nav {
@@ -442,6 +463,12 @@ figure {
     color: var(--redcolor);
   }
 }
+#myname {
+  font-size: 150%;
+  color: black;
+  font-family: var(--font-poppins-light);
+}
+
 @media (max-width: 834px) {
   #myname {
     display: none;
@@ -582,4 +609,15 @@ a.homecategories:active {
 section#bottom {
   margin-top: 50px;
   width: 100%;
+}
+
+.photography_gallery {
+  display: grid;
+  grid-gap: 10px;
+}
+.gallery-item {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
 }
