@@ -189,7 +189,7 @@ body {
   hr {
     height: 1px;
     background-color: var(--yellowcolor);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     margin-left: 24%;
     margin-right: 3%;
   }
@@ -369,6 +369,9 @@ h4 {
     font-family: var(--font-poppins);
     color: var(--redcolor);
   }
+  .project-category {
+    margin-top: 60px;
+  }
 }
 
 @media (min-width: 834px) {
@@ -390,6 +393,7 @@ h4 {
 .project {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
 
 @media (min-width: 834px) {
@@ -684,7 +688,7 @@ section#bottom {
     grid-row-gap: 40px;
     grid-column-gap: 5px;
     margin-left: 24%;
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .grid-item {
     width: 600px;
