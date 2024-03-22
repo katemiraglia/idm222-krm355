@@ -622,7 +622,6 @@ a.homecategories {
   text-decoration: none;
   display: block;
 
-  /* background: url("Images/150ppi/header_background.png") no-repeat; */
   background-size: 100% 100%;
   width: 90%;
   margin: 0 auto;
@@ -635,7 +634,6 @@ a.homecategories {
   text-decoration: none;
   display: block;
 
-  /* background: url("Images/150ppi/header_background.png") no-repeat; */
   background-size: 100% 100%;
   width: 90%;
   margin: 0 auto;
@@ -692,22 +690,6 @@ a.homecategories:active {
   filter: grayscale(100%);
 }
 
-/* this is for the text that would appear on hover
-.overlay-text {
-  opacity: 0;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 365px;
-}
-.homepage-images-container .overlay-text:hover {
-  opacity: 1;
-  color: white;
-}
-*/
 section#bottom {
   margin-top: 50px;
   width: 100%;
