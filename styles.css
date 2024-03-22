@@ -193,6 +193,7 @@ body {
     height: 1px;
     background-color: var(--yellowcolor);
     margin-bottom: 60px;
+    margin-top: 60px;
     margin-left: 24%;
     margin-right: 3%;
   }
@@ -271,10 +272,7 @@ hr {
   font-family: var(--font-poppins-light);
   color: var(--blackcolor);
 }
-.betweenproject {
-  height: 0.25px;
-  width: 90%;
-}
+
 .icons {
   display: flex;
   width: 10%;
@@ -372,8 +370,6 @@ h4 {
     font-family: var(--font-poppins);
     color: var(--redcolor);
   }
-  .project-category {
-  }
 }
 
 @media (min-width: 834px) {
@@ -395,7 +391,6 @@ h4 {
 .project {
   display: flex;
   flex-direction: column;
-  /* margin-top: 60px; */
 }
 
 @media (min-width: 834px) {
@@ -426,6 +421,8 @@ h4 {
 .text-column {
   opacity: 0;
   animation: fade-in 1s forwards;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
 }
 
 @keyframes fade-in {
