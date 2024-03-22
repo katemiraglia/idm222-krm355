@@ -32,7 +32,7 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  src: url("fonts/Inter-Regular.ttf") format("truetype");
 }
 
 :root {
