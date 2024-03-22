@@ -642,7 +642,7 @@ a.homecategories:active {
   color: var(--bluecolor);
 }
 .page-images-container {
-  position: relative;
+  /* position: relative; */
   display: block;
   margin: 0 auto;
   box-sizing: border-box;
